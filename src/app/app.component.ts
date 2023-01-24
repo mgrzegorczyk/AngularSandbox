@@ -12,10 +12,10 @@ export class AppComponent {
   constructor(private router: Router) { }
 
   onHomeClick() {
-
+    this.router.navigate(['/']);
   }
 
   onAboutUsClick() {
-
+    this.router.navigate(['aboutus']);
   }
 }
