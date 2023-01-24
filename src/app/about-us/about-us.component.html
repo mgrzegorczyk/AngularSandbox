@@ -13,3 +13,10 @@
     </div>
     <button type="submit">Send</button>
 </form>
+
+<button (click)="onGetJokeClick()">GET JOKE!</button>
+
+<div *ngIf="randomJoke">
+  <p>{{randomJoke.setup}}</p>
+  <p>{{randomJoke.punchline}}</p>
+</div>
