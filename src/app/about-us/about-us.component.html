@@ -1,1 +1,15 @@
-<p>about-us works!</p>
+<form [formGroup]="aboutUsForm" (ngSubmit)="onSubmit(aboutUsForm)">
+    <div>
+      <label>
+        Name:
+        <input formControlName="name" placeholder="Your name">
+      </label>
+    </div>
+    <div>
+      <label>
+        Email:
+        <input formControlName="email" placeholder="Your email">
+      </label>
+    </div>
+    <button type="submit">Send</button>
+</form>
